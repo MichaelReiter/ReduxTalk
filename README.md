@@ -1,5 +1,10 @@
-# React/Redux Example
+# Building Web Apps with React and Redux
 
-An example app to demonstrate React/Redux. It was built for a talk given at the University of Victoria's Web Design and Web Development Club.
+## Getting Started
 
-It is based on the official Redux Todos example.
+* Install Git if you haven't already: [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* Clone this repository: `git clone git@github.com:MichaelReiter/ReduxTalk.git`
+* Navigate inside directory: `cd ReduxTalk/sample\ app/`
+* Install Node and npm if you haven't already: [Node](https://nodejs.org/en/)
+* Install dependencies: `npm install`
+* Start the app: `npm start`
