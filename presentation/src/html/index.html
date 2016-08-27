@@ -71,6 +71,27 @@
     </div>
   </section>
 
+  <section>
+    <div class='vcenter'>
+      <h2>Redux simplifies Flux</h2>
+      <ul class='list-unstyled text-center'>
+        <li>Components are passed callback functions as props</li>
+        <li>Callbacks create and dispatch actions whenever a UI event is triggered</li>
+        <li>Actions are processed, computing the updated state</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class='vcenter'>
+      <ul class='list-unstyled text-center'>
+        <li>State is kept immutable</li>
+        <li>State saved in a single store serving the entire application</li>
+        <li>Components rerendered as necessary, receiving updated state as props</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- Why Redux? -->
   <section class='section-header'>
     <h2 class='vcenter'>Why Redux?</h2>
@@ -85,6 +106,24 @@
     </div>
   </section>
 
+  <section>
+    <div class='vcenter'>
+      <h2>Powerful State Tree</h2>
+      <ul class='list-unstyled text-center'>
+        <li>Immutable state and pure reducers allow trivial time travel</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class='vcenter'>
+      <h2>Hot Reloading</h2>
+      <ul class='list-unstyled text-center'>
+        <li>Logic can be updated on the fly without affecting state</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- Concepts -->
   <section class='section-header'>
     <h2 class='vcenter'>Concepts</h2>
@@ -94,7 +133,11 @@
     <div class='vcenter'>
       <h2>Actions</h2>
       <ul class='list-unstyled text-center'>
-        <li>something</li>
+        <li>Objects describing an intended state update</li>
+        <li>Must contain a type field describing the update</li>
+        <li>Can otherwise take any shape</li>
+        <li>The only way store changes can be triggered</li>
+        <li>Should be dispatched whenever a user interaction occurs</li>
       </ul>
     </div>
   </section>
@@ -103,7 +146,9 @@
     <div class='vcenter'>
       <h2>Reducers</h2>
       <ul class='list-unstyled text-center'>
-        <li>something</li>
+        <li>Process actions</li>
+        <li>Pure functions (no side effects)</li>
+        <li>(state, action) => new state</li>
       </ul>
     </div>
   </section>
@@ -112,7 +157,10 @@
     <div class='vcenter'>
       <h2>Store</h2>
       <ul class='list-unstyled text-center'>
-        <li>something</li>
+        <li>Large nested object for keeping track of application state</li>
+        <li>Only one store in Redux</li>
+        <li>Root reducer composed of smaller reducers which can independently manipulate state</li>
+        <li>Similar to composing React components</li>
       </ul>
     </div>
   </section>
