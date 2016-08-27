@@ -1,4 +1,8 @@
-# Building Web Apps with React and Redux
+# Managing State with Redux
+
+## Check out the presentation
+
+[Link](https://michaelreiter.github.io/ReduxTalk/)
 
 ## Getting Started
 
@@ -8,3 +12,7 @@
 * Install Node and npm if you haven't already: [Node](https://nodejs.org/en/)
 * Install dependencies: `npm install`
 * Start the app: `npm start`
+
+## Special Thanks
+
+* [Ben Hawker](https://github.com/hwkr) for his presentation framework
